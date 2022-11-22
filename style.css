@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 .backgroundImage {
-    background-image: url(/GinBar/assets/home2.jpg);
+    background-image: url(/gin-bar/assets/home2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -319,7 +319,7 @@ textarea::placeholder {
 /* Menu Page */
 
 .backgroundImage2 {
-    background-image: url(/GinBar/assets/Inside.jpg);
+    background-image: url(/gin-bar/assets/Inside.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
