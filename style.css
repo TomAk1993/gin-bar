@@ -1,0 +1,627 @@
+:root {
+    --lightgreen: #a3b18a;
+    --background: #22223b;
+    --black: #000000;
+    --green1: #588157;
+    --green2: #606c38;
+    --green3: #5881579f;
+    --yellow: #cca855;
+    --white: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background-color: var(--yellow);
+    opacity: 0.8;
+    width: 100%;
+}
+
+.logo {
+    opacity: 1;
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+nav {
+    width: 80%;
+    /* height: 75px; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: var(--white);
+    transition: 500ms;
+}
+
+.backgroundImage {
+    background-image: url(/GinBar/assets/home2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.home {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+.bookNow button {
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    background-color: var(--yellow);
+    width: 150px;
+    height: 50px;
+    border-radius: 2rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bookNow a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.bookNow button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 250ms ease-in;
+}
+
+.bookNow button:active {
+    background-color: var(--white);
+}
+
+/* Gin Section */
+
+.sectionContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ginImage img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.ginText {
+    flex-grow: 1;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ginText h2 {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2rem;
+}
+.ginText p {
+    margin-top: 25px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.ginImage {
+    width: 50%;
+    min-width: 450px;
+    flex-grow: 1;
+}
+
+.ginButtons {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gin-button {
+    background-color: var(--yellow);
+    padding: 8px 16px;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gin-button:hover {
+    transform: scale(1.1);
+    transition: 250ms
+    ;
+}
+
+.middleSection {
+    height: 500px;
+    margin-top: 50px;
+    background-color: var(--green3);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.middleSection h3 {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+}
+
+.singleDrink {
+    display: flex;
+    justify-content: center;
+}
+
+.singleDrink img {
+    width: 80px;
+    position: relative;
+    left: 10px;
+}
+
+.findoutmore {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Bookings Section */
+
+.bookings-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.bookings-form {
+    width: 600px;
+    background-color: var(--green1);
+    padding: 2rem 3rem;
+
+}
+
+.bookings-form h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.bookings-form label {
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.bookings-form input {
+    width: 300px;
+    height: 30px;
+}
+
+.bookings-form input::placeholder {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem ;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.textarea textarea {
+    width: 480px;
+    margin: auto;
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.textarea label {
+    margin-left: 14px;
+    margin: 2rem 0 2rem 14px;
+}
+
+textarea::placeholder {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bookings-form button {
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 2rem;
+}
+
+.send-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+/* Menu Page */
+
+.backgroundImage2 {
+    background-image: url(/GinBar/assets/Inside.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+
+.menu-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.menu {
+    width: 750px;
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+.menu h2 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.menu-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 2rem;
+    text-transform: uppercase;
+    gap: 30px;
+}
+
+.listHead {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.menu-list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 1.5rem 0;
+}
+
+.menu-list-item h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menu-list-item span {
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+/* Gallery Page */
+
+.gallery-title h2 {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gallery-image-container {
+    padding-top: 5rem;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.gallery-image-container .image {
+    height: 300px;
+    box-shadow: 0 10px 15px var(--green1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-image img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 250ms;
+} 
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .8);
+    display: none;
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-size {
+    width: 550px;
+    border: 1px solid var(--yellow);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px var(--green2);
+}
+
+/* Footer Section */
+
+footer {
+    background-color: var(--green3)
+}
+
+.bottomSection {
+    margin-top: 50px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 475px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer h5 {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.title {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    font-weight: 900;
+}
+
+footer p {
+    color: var(--white);
+}
+
+.bottomBranding {
+    background-color: var(--black);
+    padding: 25px 0;
+}
+
+.bottomBranding h3 {
+    text-align: center;
+    color: var(--white);
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+@media all and (max-width: 905px) {
+
+    .logo {
+        padding: 0;
+        text-decoration: overline;
+    }
+
+    header {
+        height: 75px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding-top: 30px;
+    }
+    nav {
+        width: 100%;
+        height: 0;
+        padding-bottom: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: space-around;
+        line-height: 4rem;
+        padding: 30px 30px 0 0;
+        align-items: flex-end;
+        width: 100%;
+        background-color: #cca855;
+        /* display: none; */
+        position: absolute;
+        left: -900px;
+        top: 75px;
+        transition: all 500ms ease-in-out;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        left: 0;
+        top: 75px;
+    }
+
+    .hamburger {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .hamburger .bar {
+        margin: auto;
+        margin-top: 10px;
+        width: 40px;
+        height: 3px;
+        background-color: #000000;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        display: none;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-section {
+        width: 500px;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 575px) {
+
+    .menu-section {
+        width: 90%;
+    }
+
+    .list:nth-of-type(2) {
+        display: none;
+    }
+    .bottomSection {
+        text-align: center;
+    }
+
+    .bookings-form {
+        width: 400px;
+        background-color: var(--green1);
+        padding: 2rem 0.5rem;
+    }
+
+    .bookings-form input {
+        width: 200px;
+        height: 25px;
+    }
+
+    .bookings-form input::placeholder {
+        font-size: 0.75rem;
+    }
+
+    .textarea label {
+        margin-left: 14px;
+        margin: 1rem 0 2rem 15px;
+    }
+
+    .textarea textarea {
+        width: 90%;
+        margin: auto;
+        font-size: 1.5rem;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .form-buttons {
+        margin-top: 20px;
+    }
+
+    .image-size {
+        width: 80%;
+    }
+}
